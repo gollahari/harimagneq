@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="sandy497"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="userName" value="honey497@gmail.com"/>
+  <parameter name="url" value="https://www.mercurytravels.co.in/"/>
+  <test thread-count="5" name="MercuryTravel(failed)">
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.testng.selenium.java.Seleniumtestng">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.testng.selenium.java.Seleniumtestng -->
+    </classes>
+  </test> <!-- MercuryTravel(failed) -->
+</suite> <!-- Failed suite [Suite] -->

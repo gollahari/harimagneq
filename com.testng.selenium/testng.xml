@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="url" value="https://www.mercurytravels.co.in/"/>
+<parameter name="userName" value="honey497@gmail.com"/>
+<parameter name="password" value="sandy497"/>
+  <parameter name="browserName" value="chrome"/>
+  <test  name="MercuryTravel" enabled="true">
+ 
+  <groups>
+      <run>
+         <include name="sanity"></include>
+      
+      </run>
+  
+  </groups>
+      
+    <classes>
+      <class name="com.testng.selenium.java.Seleniumtestng">
+        
+      </class>
+      
+    </classes>
+  </test> 
+</suite> 

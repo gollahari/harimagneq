@@ -1,0 +1,13 @@
+name: Suite
+configFailurePolicy: skip
+parameters: { password: sandy497, url: http://www.mercurytravels.co.in, username: honey497@gmail.com }
+tests:
+  - name: MercuryTravelsLogin
+  parameters: { browserName: chrome }
+  classes:
+    - name: com.testng.selenium.java.Seleniumtestng
+      includedMethods:
+        - name: lunchApp
+        - name:  loginStatus
+        - name: logout
+
